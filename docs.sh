@@ -25,3 +25,5 @@ do
     echo "Copying $f/docs/api/build/ to ../_site/"
     cp -af "$f/docs/api/build/." $TARDIR
 done
+
+cp _redirects _site/_redirects
