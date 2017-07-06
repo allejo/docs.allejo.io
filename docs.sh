@@ -14,6 +14,7 @@ mkdir -p projects/php/
 
 git clone https://github.com/allejo/PhpPulse.git projects/php/PhpPulse
 git clone https://github.com/allejo/PhpSoda.git projects/php/PhpSoda
+git clone https://github.com/allejo/PhpWufoo.git projects/php/PhpWufoo
 
 rm -rf _site
 mkdir _site
