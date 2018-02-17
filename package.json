@@ -1,7 +1,7 @@
 {
   "name": "docs.allejo.io",
   "version": "1.0.0",
-  "description": "This repository powers the [docs.allejo.io](https://docs.allejo.io/) domain hosted on [Netlify](https://www.netlify.com/), which hosts documentation for the following projects:",
+  "description": "This repository powers the docs.allejo.io domain hosted on Netlify, which hosts documentation for allejo's projects",
   "main": "index.js",
   "dependencies": {
     "sassdoc": "^2.5.0"
