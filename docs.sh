@@ -41,7 +41,10 @@ git clone https://github.com/allejo/eyeglass-sassy-data.git projects/sass/eyegla
 
 for f in ./projects/sass/*
 do
-    node_modules/.bin/sassdoc "$f/sass/*.scss" --package "$f/package.json" --dest "$TARDIR/$(basename $f)"
+    SASSDOCRC=$(cat .sassdocrc.dist)
+    echo "${SASSDOCRC/\%package\%/$f\/package.json}" > .sassdocrc
+
+    node_modules/.bin/sassdoc "$f/sass/*.scss" --dest "$TARDIR/$(basename $f)"
 done
 
 cp _redirects _site/_redirects

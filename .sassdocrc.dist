@@ -1,0 +1,5 @@
+display:
+  access:
+    - public
+googleAnalytics: UA-59480871-3
+package: %package%

@@ -2,3 +2,5 @@ projects/
 vendor/
 _site/
 node_modules/
+.sassdocrc
+*.phar*
