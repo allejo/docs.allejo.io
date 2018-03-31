@@ -23,7 +23,7 @@ git clone https://github.com/allejo/PhpWufoo.git projects/php/PhpWufoo
 
 for f in ./projects/php/*
 do
-    $SAMI update "$f/docs/sami-config.php"
+    php7.2 $SAMI update "$f/docs/sami-config.php"
 
     echo "Copying $f/docs/api/build/ to ../_site/"
     cp -af "$f/docs/api/build/." $TARDIR
