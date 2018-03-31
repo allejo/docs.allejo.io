@@ -1,8 +1,0 @@
-{
-    "name": "allejo/docs.allejo.io",
-    "type": "project",
-    "require": {
-        "twig/twig": "~1.20",
-        "sami/sami": "^3.3.0"
-    }
-}

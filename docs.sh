@@ -12,12 +12,10 @@ mkdir _site/
 # PHP Projects
 #
 
-wget https://getcomposer.org/composer.phar --quiet
-chmod +x composer.phar
+curl -O http://get.sensiolabs.org/sami.phar
+chmod +x sami.phar
 
-./composer.phar install --quiet
-
-SAMI=./vendor/bin/sami.php
+SAMI=./sami.phar
 
 git clone https://github.com/allejo/PhpPulse.git projects/php/PhpPulse
 git clone https://github.com/allejo/PhpSoda.git projects/php/PhpSoda
