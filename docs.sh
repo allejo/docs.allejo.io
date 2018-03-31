@@ -13,9 +13,11 @@ mkdir _site/
 #
 
 #curl -O http://get.sensiolabs.org/sami.phar
-curl -O http://get.sensiolabs.org/sami-v4.0.14.phar
-chmod +x sami.phar
 
+curl -O http://get.sensiolabs.org/sami-v4.0.14.phar
+mv sami-v4.0.14.phar sami.phar
+
+chmod +x sami.phar
 SAMI=./sami.phar
 
 git clone https://github.com/allejo/PhpPulse.git projects/php/PhpPulse
