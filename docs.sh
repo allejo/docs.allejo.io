@@ -12,10 +12,15 @@ mkdir _site/
 # PHP Projects
 #
 
-#curl -O http://get.sensiolabs.org/sami.phar
+curl -O http://get.sensiolabs.org/sami.phar
 
-curl -O http://get.sensiolabs.org/sami-v4.0.14.phar
-mv sami-v4.0.14.phar sami.phar
+# In case I need to lock down a specific version
+# ----
+# curl -O http://get.sensiolabs.org/sami-v4.0.14.phar
+# mv sami-v4.0.14.phar sami.phar
+
+echo "Using PHP..."
+php7.2 --version
 
 chmod +x sami.phar
 SAMI=./sami.phar
@@ -26,6 +31,7 @@ git clone https://github.com/allejo/PhpWufoo.git projects/php/PhpWufoo
 
 for f in ./projects/php/*
 do
+    echo "Building $f"
     php7.2 $SAMI update "$f/docs/sami-config.php"
 
     echo "Copying $f/docs/api/build/ to ../_site/"
