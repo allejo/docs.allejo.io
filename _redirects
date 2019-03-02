@@ -3,6 +3,7 @@ https://docs-allejo-io.netlify.com/* https://docs.allejo.io/:splat 301!
 
 /phppulse  /phppulse/master  302
 /phpsoda   /phpsoda/master   302
-/phpwufoo  /phpwufoo/master  302/PhpPulse  /phppulse/master  302
+/phpwufoo  /phpwufoo/master  302
+/PhpPulse  /phppulse/master  302
 /PhpSoda   /phpsoda/master   302
 /PhpWufoo  /phpwufoo/master  302
